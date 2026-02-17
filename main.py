@@ -22,14 +22,16 @@ def armstrong(num):
         result ={
             "Number":num,
             "Armstrong":True,
-            "Server IP":"172.168.0.1"
+            "Server IP":"172.168.0.1",
+            "Numbers":[123,21,334,24]
         } 
     else:
         print("Not an Armstrong Number")
         result ={
             "Number":num,
             "Armstrong":False,
-            "Server IP":"172.168.0.1"
+            "Server IP":"172.168.0.1",
+            "Numbers":[123,21,334,24]
         } 
     return jsonify(result)
 
