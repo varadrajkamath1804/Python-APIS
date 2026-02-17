@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask,jsonify
 
 app = Flask(__name__)
 
@@ -31,7 +31,7 @@ def armstrong(num):
             "Armstrong":False,
             "Server IP":"172.168.0.1"
         } 
-    return result
+    return jsonify(result)
 
 if __name__ == "__main__":
     app.run(debug=True)
